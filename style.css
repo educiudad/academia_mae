@@ -9,7 +9,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.233)),
               url("imagens/7b79047962a120c665f05e55dd6a7c2d.jpg");
   background-size: cover;
   background-position: center;
@@ -122,4 +122,45 @@ body::before {
 
 .card:hover .imagem_academia {
   transform: scale(1.05); /* aumenta 5% */
+}
+
+/* .inicio {
+   font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor1);
+  text-shadow: 2px 2px 5px var(--cor4);
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid var(--cor2);
+  border-radius: 20px;
+  transition: 0.3s;
+} */
+
+.inicio {
+  z-index: 1;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor1);
+  text-shadow: 2px 2px 5px var(--cor4);
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid var(--cor2);
+  border-radius: 20px;
+  transition: 0.3s;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  box-shadow: #5959598c 2px 2px 5px;
+}
+
+.inicio:hover {
+   transform: translateY(-8px); /* sobe 8px */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4); /* sombra maior */
+  background: var(--cor3);
+}
+
+.inicio > a {
+  text-decoration: none;
+  color: var(--cor1);
 }
